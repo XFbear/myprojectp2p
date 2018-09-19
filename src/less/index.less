@@ -1,0 +1,73 @@
+// 定义全局变量
+@colorWhite:#fff;
+@colorBlue:#00a8ff;
+// 重置导航条的效果
+.navbar{
+    margin-bottom: 0px;
+}
+.navbar-inverse{
+    .navbar-brand{
+        color: @colorWhite;
+        font-size: 24px;
+        font-style: italic;
+        span{
+            font-size:16px;
+            margin-right: 5px;
+        }  
+    }
+    .navbar-nav{
+        &>li{
+            &>a{
+                color: #fff;
+                &:hover{
+                    color: @colorBlue;
+                    text-decoration: none;
+                }
+            }
+        }
+    } 
+
+}
+
+.navbar-default .navbar-nav > li > a{
+    font-size: 16px;
+    line-height: 40px;
+    text-align: center;
+    &:hover{
+        color:@colorBlue;
+        background-color: #eee;  
+    }
+
+}
+
+// 工具提示的图片大小
+.tooltip img{
+    width: 100px;
+}
+// 三大特色效果
+#feature{
+    margin-bottom: 20px ;
+    margin-top:20px;
+    .row{
+        &>div{
+            height: 65px;
+            padding-left: 80px;
+            background: url('../../../images/feature01.png') no-repeat left center;
+            margin-bottom: 10px;
+            h3{
+                font-size:16px;
+                font-weight: bold;
+                padding: 0;
+                margin: 0;
+            }
+            
+        }
+        &>div:nth-of-type(2){
+            background: url('../../../images/feature02.png') no-repeat
+            
+        }
+        &>div:nth-of-type(3){
+            background: url('../../../images/feature03.png') no-repeat
+        }
+    }
+} 
